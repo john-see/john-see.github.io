@@ -12,3 +12,8 @@ h1 {
 font-size: 30px;
 line-height: 36px;
 }
+
+.page-header {
+    border-bottom: 1px solid #ccc;
+    margin: 0px 0px 10px 0px;
+}
