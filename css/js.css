@@ -37,3 +37,18 @@ section > .lead {
 section > ul li {
   margin-bottom: 5px;
 }
+
+.label_download {
+  padding: 2px 4px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #ffffff;
+  vertical-align: top;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
