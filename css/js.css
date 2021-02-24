@@ -38,7 +38,7 @@ section > ul li {
   margin-bottom: 5px;
 }
 
-.label_download {
+.label_download, .label_download_pdf {
   padding: 2px 4px;
   font-size: 11px;
   font-weight: bold;
@@ -51,4 +51,8 @@ section > ul li {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+
+.label_download_pdf {
+  background-color: #f40f02;   
 }
