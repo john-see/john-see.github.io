@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Heriot-Watt University (Malaysia Campus)</a>. # Address. Contacts. Moto. Etc.
+subtitle: <small>Ph.D, SMIEEE</small>. # Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: john_pic.jpg
+  image: john-pic.jpg
   image_circular: false # crops the image to make it circular
   address: 
 
@@ -20,8 +20,7 @@ Hi! I am an Associate Professor at the [School of Mathematical and Computer Scie
 
 My research interests spans broadly the areas of computer vision and multimedia signal processing. In particular, my current research focus is on the understanding and analysis of emotional signals from a variety of context - from photographs to subtle facial cues to human-robot interactions. I still work on a lot of classical problems related to visual surveillance: object detection from high resolution imagery, activity recognition and localization.  
 
-I am currently serving as the Subject Editor (Senior Area Chair) of the [Signal Processing](https://www.sciencedirect.com/journal/signal-processing) journal, and Associate Editor of [IEEE Transactions on Multimedia](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia), [EURASIP Journal of Image and Video Processing](https://jivp-eurasipjournals.springeropen.com/), [The Computer Journal](https://academic.oup.com/comjnl/) and [Frontiers in Signal Processing - Image Processing](https://www.frontiersin.org/journals/signal-processing).  
-I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee for 2020-2024 Term.
+I am currently serving as the Subject Editor (Senior Area Chair) of the [Signal Processing](https://www.sciencedirect.com/journal/signal-processing) journal, and Associate Editor of [IEEE Transactions on Multimedia](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia), [EURASIP Journal of Image and Video Processing](https://jivp-eurasipjournals.springeropen.com/), [The Computer Journal](https://academic.oup.com/comjnl/) and [Frontiers in Signal Processing - Image Processing](https://www.frontiersin.org/journals/signal-processing). I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee for 2020-2024 Term.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
