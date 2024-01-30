@@ -7,10 +7,13 @@ nav: true
 nav_order: 5
 ---
 
-## MIT
+## HWUM
 
-- 6.008: Introduction to Inference, Teaching Assistant Fall 2021
-- 6.3800: Introduction to Inference, Teaching Assistant Fall 2022
+- Honours Year Project (F20PA, F20PB, F20PC), 2023-2024
+- F20AA Applied Text Analytics, Jan 2023
+- F28SD Introduction to Software Engineering, Jan 2023 
+- F29AI Artificial Intelligence and Intelligent Agents, Sept 2023 (for CS/SDS)
+- F20DL Data Mining & Machine Learning, Sept 2023
 
 <!--
 For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.

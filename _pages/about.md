@@ -2,17 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Heriot-Watt University (Malaysia Campus)</a>. # Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  address: >
-    <p>Room 36-776A</p>
-    <p>50 Vassar St. </p>
-    <p>(MIT building 36) </p>
-    <p>Cambridge, MA 02139</p>
+  image: john_pic.jpg
+  image_circular: false # crops the image to make it circular
+  address: 
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -20,14 +16,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am currently a fifth-year Ph.D. student at MIT majoring in Electrical Engineering and Computer Science.
-My research focuses on machine learning and developing robust and efficient algorithms driven by clinical problems.
-Applications include motion-robust 3D rendering of the human brain, real-time quality assessment in MR scans as well as pose estimation and motion characterization of fetuses.
-I am advised by Prof. [Elfar Adalsteinsson](https://www.rle.mit.edu/people/directory/elfar-adalsteinsson/) and collaborate closely with Prof. [Polina Golland](https://people.csail.mit.edu/polina/) and Prof. [P. Ellen Grant](https://scholar.google.com/citations?user=W4dqZ7EAAAAJ).
+Hi! I am an Associate Professor at the [School of Mathematical and Computer Sciences](https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences/about.htm), [Heriot-Watt University (Malaysia Campus)](https://www.hw.ac.uk/malaysia/). I spent much of my early career at [Multimedia University](http://www.mmu.edu.my/), Malaysia where I founded the [Visual Processing (ViPr) Lab](https://viprlab.github.io/) and was also chair of the Centre for Visual Computing (CVC). From 2017-2019, I was also a Visiting Research Fellow at [Shanghai Jiao Tong University (SJTU)](http://en.sjtu.edu.cn/) as a recepient of the Belt and Road Initiative Young Scientist Fellowship where I worked closely with [Weiyao Lin](https://weiyaolin.github.io/).
 
-I also did summer internships at Google and Meta, working on automated Ads bidding and large-scale video recommendation systems respectively.
+My research interests spans broadly the areas of computer vision and multimedia signal processing. In particular, my current research focus is on the understanding and analysis of emotional signals from a variety of context - from photographs to subtle facial cues to human-robot interactions. I still work on a lot of classical problems related to visual surveillance: object detection from high resolution imagery, activity recognition and localization.  
 
-Prior to MIT, I received my Bachelor's degree from Tsinghua University in 2018. I also spent a summer as a research assistant at Stanford, where I was advised by Prof. [John Pauly](https://web.stanford.edu/~pauly/) and Prof. [Greg Zaharchuk](https://profiles.stanford.edu/greg-zaharchuk).
+I am currently serving as the Subject Editor (Senior Area Chair) of the [Signal Processing](https://www.sciencedirect.com/journal/signal-processing) journal, and Associate Editor of [IEEE Transactions on Multimedia](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia), [EURASIP Journal of Image and Video Processing](https://jivp-eurasipjournals.springeropen.com/), [The Computer Journal](https://academic.oup.com/comjnl/) and [Frontiers in Signal Processing - Image Processing](https://www.frontiersin.org/journals/signal-processing).  
+I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee for 2020-2024 Term.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
