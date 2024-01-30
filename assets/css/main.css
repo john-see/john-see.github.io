@@ -979,10 +979,6 @@ nav[data-toggle=toc] .nav-link.active:hover {
   }
 }
 /* chinese name format */
-.d-md-none {
-  font-size: 0.5em;
-}
-
 /* Tips, warnings, and dangers blockquotes */
 .post .post-content blockquote.block-tip {
   border-color: var(--global-tip-block);
