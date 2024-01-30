@@ -154,13 +154,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/john-pic-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/john-pic-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/john-pic-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/john-pic2-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/john-pic2-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/john-pic2-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/john-pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="john-pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/john-pic2.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="john-pic2.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -173,7 +173,7 @@
 
 <p>My research interests spans broadly the areas of computer vision and multimedia signal processing. In particular, my current research focus is on the understanding and analysis of emotional signals from a variety of context - from photographs to subtle facial cues to human-robot interactions. I still work on a lot of classical problems related to visual surveillance: object detection from high resolution imagery, activity recognition and localization.</p>
 
-<p>I am currently serving as the Subject Editor (Senior Area Chair) of the <a href="https://www.sciencedirect.com/journal/signal-processing" rel="external nofollow noopener" target="_blank">Signal Processing</a> journal, and Associate Editor of <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia" rel="external nofollow noopener" target="_blank">IEEE Transactions on Multimedia</a>, <a href="https://jivp-eurasipjournals.springeropen.com/" rel="external nofollow noopener" target="_blank">EURASIP Journal of Image and Video Processing</a>, <a href="https://academic.oup.com/comjnl/" rel="external nofollow noopener" target="_blank">The Computer Journal</a> and <a href="https://www.frontiersin.org/journals/signal-processing" rel="external nofollow noopener" target="_blank">Frontiers in Signal Processing - Image Processing</a>. I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee for 2020-2024 Term.</p>
+<p>I am currently serving as the Subject Editor (Senior Area Chair) of the <a href="https://www.sciencedirect.com/journal/signal-processing" rel="external nofollow noopener" target="_blank">Signal Processing</a> journal, and Associate Editor of <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia" rel="external nofollow noopener" target="_blank">IEEE Transactions on Multimedia</a>, <a href="https://jivp-eurasipjournals.springeropen.com/" rel="external nofollow noopener" target="_blank">EURASIP Journal of Image and Video Processing</a>, <a href="https://academic.oup.com/comjnl/" rel="external nofollow noopener" target="_blank">The Computer Journal</a> and <a href="https://www.frontiersin.org/journals/signal-processing" rel="external nofollow noopener" target="_blank">Frontiers in Signal Processing - Image Processing</a>. I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee (2020-2024).</p>
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
@@ -208,6 +208,80 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
           <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="sfamnetpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/sfamnet.png"><div id="sfamnetpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('sfamnetpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="sfamnetpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("sfamnetpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('sfamnetpng');
+      var modalImg = document.getElementById("sfamnetpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="liong2024sfamnet" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">SFAMNet: A Scene Flow Attention-based Micro-expression Network</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Gen-Bing Liong, Sze-Teng Liong, Chee Seng Chan, and <em>John See</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Neurocomputing</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://ieeexplore.ieee.org/document/10015091" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://www.techrxiv.org/articles/preprint/NeSVoR_Implicit_Neural_Representation_for_Slice-to-Volume_Reconstruction_in_MRI/21398868" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/genbing99/SFAMNet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.neucom.2023.126998"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1016/j.neucom.2023.126998" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Tremendous progress has been made in facial Micro-Expression (ME) spotting and recognition; however, most works have focused on either spotting or recognition tasks on the 2D videos. Until recently, the estimation of the 3D motion field (a.k.a scene flow) for the ME has only become possible after the release of the multi-modal ME dataset. In this paper, we propose the first Scene Flow Attention-based Micro-expression Network, namely SFAMNet. It takes the scene flow computed using the RGB-D flow algorithm as the input and predicts the spotting confidence score and emotion labels. Specifically, SFAMNet is an attention-based end-to-end multi-stream multi-task network devised to spot and recognize the ME. Besides that, we present a data augmentation strategy to alleviate the small sample size problem during network learning. Extensive experiments are performed on three tasks: (i) ME spotting; (ii) ME recognition; and (iii) ME analysis on the multi-modal CAS(ME)^3 dataset. Empirical results indicate that depth is vital in capturing the ME information and the effectiveness of the proposed approach. Our source code is publicly available at <a href="https://github.com/genbing99/SFAMNet" rel="external nofollow noopener" target="_blank">https://github.com/genbing99/SFAMNet</a>.</p>
+    </div>
+  </div>
+</div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
