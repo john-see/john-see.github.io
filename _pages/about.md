@@ -6,7 +6,7 @@ subtitle: <small>Ph.D, SMIEEE</small>. # Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: john-pic2.jpg
+  image: john-pic.jpg
   image_circular: false # crops the image to make it circular
   address: 
 

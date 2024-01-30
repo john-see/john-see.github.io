@@ -6,8 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: John
 middle_name: 
 last_name: See
-chinese_last_name: 
-chinese_first_name:
+chinese_last_name: 施
+chinese_first_name: 书杨
 email: j.see@hw.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -17,7 +17,7 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: favicon.ico #🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: faviconV2.png #🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://john-see.github.io # the base hostname & protocol for your site
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/
