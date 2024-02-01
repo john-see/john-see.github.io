@@ -21,11 +21,6 @@ profile:
     image: imad.jpg
     role: Doctoral Research Scholar
     email: ig2010@hw..ac.uk
-    twitter: #
-    orcid: #
-    address: #>
-        # <br/>
-        #
 ---
 
 I am a PhD student at the Technical University of Darmstadt and an Associate Scientist at ABB Corporate Research Center.
