@@ -1,31 +1,62 @@
 ---
-layout: about
-title: about
-permalink: /
-subtitle: <small>Ph.D, SMIEEE</small>. # Address. Contacts. Moto. Etc.
-
-profile:
-  align: right
-  image: john-pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: 
-
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+layout: page
+title: MuDA Lab
+permalink: /mudalab/
+description: Multimedia Data Analysis (MuDA) Lab, Heriot-Watt University, Malaysia
+nav: true
+nav_order: 2
+horizontal: false
 ---
 
-Hi! I am an Associate Professor at the [School of Mathematical and Computer Sciences](https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences/about.htm), [Heriot-Watt University (Malaysia Campus)](https://www.hw.ac.uk/malaysia/). I spent much of my early career at [Multimedia University](http://www.mmu.edu.my/), Malaysia where I founded the [Visual Processing (ViPr) Lab](https://viprlab.github.io/) and was also chair of the Centre for Visual Computing (CVC). From 2017-2019, I was also a Visiting Research Fellow at [Shanghai Jiao Tong University (SJTU)](http://en.sjtu.edu.cn/) as a recepient of the Belt and Road Initiative Young Scientist Fellowship where I worked closely with [Weiyao Lin](https://weiyaolin.github.io/).
+{% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
+{% for group in groups %}
+## {{ group }}
 
-My research interests spans broadly the areas of computer vision and multimedia signal processing. In particular, my current research focus is on the understanding and analysis of emotional signals from a variety of context - from photographs to subtle facial cues to human-robot interactions. I still work on a lot of classical problems related to visual surveillance: object detection from high resolution imagery, activity recognition and localization.  
-
-I am currently serving as the Subject Editor (Senior Area Chair) of the [Signal Processing](https://www.sciencedirect.com/journal/signal-processing) journal, and Associate Editor of [IEEE Transactions on Multimedia](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia), [EURASIP Journal of Image and Video Processing](https://jivp-eurasipjournals.springeropen.com/), [The Computer Journal](https://academic.oup.com/comjnl/) and [Frontiers in Signal Processing - Image Processing](https://www.frontiersin.org/journals/signal-processing). I am also a Senior Member of IEEE and an elected member of the IEEE Multimedia Systems and Applications (MSA) Technical Committee (2020-2024).
-
-<!--
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.test
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
--->
+    {% assign members = site.members | sort: "lastname" | where: "group", group %}
+    {% for member in members %}
+<p>
+    <div class="card {% if member.inline == false %}hoverable{% endif %}">
+        <div class="row no-gutters">
+            <div class="col-sm-4 col-md-3">
+                <img src="{{ '/assets/img/' | append: member.profile.image | relative_url }}" class="card-img img-fluid" alt="{{ member.profile.name }}" />
+            </div>
+            <div class="team col-sm-8 col-md-9">
+                <div class="card-body">
+                    {% if member.inline == false %}<a href="{{ member.url | relative_url }}">{% endif %}
+                    <h5 class="card-title">{{ member.profile.name }}</h5>
+                    {% if member.profile.position %}<h6 class="card-subtitle mb-2 text-muted">{{ member.profile.position }}</h6>{% endif %}
+                    <p class="card-text">
+                        {{ member.teaser }}
+                    </p>
+                    {% if member.inline == false %}</a>{% endif %}
+                    {% if member.profile.email %}
+                        <a href="mailto:{{ member.profile.email }}" class="card-link"><i class="fas fa-envelope"></i></a>
+                    {% endif %}
+                    {% if member.profile.phone %}
+                        <a href="tel:{{ member.profile.phone }}" class="card-link"><i class="fas fa-phone"></i></a>
+                    {% endif %}
+                    {% if member.profile.linkedin %}
+                        <a href="https://linkedin.com/in/{{ member.profile.linkedin }}/" class="card-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    {% endif %}
+                    {% if member.profile.orcid %}
+                        <a href="https://orcid.org/{{ member.profile.orcid }}" class="card-link" target="_blank"><i class="fab fa-orcid"></i></a>
+                    {% endif %}
+                    {% if member.profile.twitter %}
+                        <a href="https://twitter.com/{{ member.profile.twitter }}" class="card-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if member.profile.github %}
+                        <a href="https://github.com/{{ member.profile.github }}" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
+                    {% endif %}
+                    {% if member.profile.website %}
+                        <a href="{{ member.profile.website }}" class="card-link" target="_blank"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+                    <p class="card-text">
+                        <small class="test-muted"><i class="fas fa-thumbtack"></i> {{ member.profile.address | replace: '<br />', ', ' }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+    {% endfor %}
+{% endfor %}
