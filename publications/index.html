@@ -289,11 +289,98 @@
       <a href="https://ieeexplore.ieee.org/document/10006755" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
       <a href="https://researchportal.hw.ac.uk/files/83582564/Doing_More_With_Moir_Pattern_Detection_in_Digital_Photos.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
       <a href="https://github.com/cong-yang/MoireDet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      <a href="/assets/video/moiredet-demo.mp4" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Video</a>
     </div>
     
     <div class="badges">
       <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TIP.2022.3232232"></span>
       <span class="__dimensions_badge_embed__" data-doi="10.1109/TIP.2022.3232232" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Detecting moiré patterns in digital photographs is meaningful as it provides priors towards image quality evaluation and demoiréing tasks. In this paper, we present a simple yet efficient framework to extract moiré edge maps from images with moiré patterns. The framework includes a strategy for training triplet (natural image, moiré layer, and their synthetic mixture) generation, and a Moiré Pattern Detection Neural Network (MoireDet) for moiré edge map estimation. This strategy ensures consistent pixel-level alignments during training, accommodating characteristics of a diverse set of camera-captured screen images and real-world moiré patterns from natural images. The design of three encoders in MoireDet exploits both high-level contextual and low-level structural features of various moiré patterns. Through comprehensive experiments, we demonstrate the advantages of MoireDet: better identification precision of moiré images on two datasets, and a marked improvement over state-of-the-art demoiréing methods.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="slice-wtbpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/slice-wtb.png"><div id="slice-wtbpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('slice-wtbpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="slice-wtbpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("slice-wtbpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('slice-wtbpng');
+      var modalImg = document.getElementById("slice-wtbpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="gohar2023slice" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Slice-Aided Defect Detection in Ultra High-Resolution Wind Turbine Blade Images</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Imad Gohar, Abderrahim Halimi, <em>John See</em>, Weng Kean Yew, and
+      <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Cong Yang' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Machines</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://www.mdpi.com/2075-1702/11/10/953" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://www.mdpi.com/2075-1702/11/10/953/pdf?version=1697117170" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/imadgohar/DTU-annotations" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3390/machines11100953"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.3390/machines11100953" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
     </div>
 
     <!-- Hidden abstract block -->
