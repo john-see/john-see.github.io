@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MuDA Lab
+title: mudalab
 permalink: /mudalab/
 description: Multimedia Data Analysis (MuDA) Lab, Heriot-Watt University, Malaysia
 nav: true
