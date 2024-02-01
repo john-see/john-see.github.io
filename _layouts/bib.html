@@ -235,7 +235,7 @@
     {% if site.badges %}
     <div class="badges">
       {%- if site.badges.altmetric_badge %}
-      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2"
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="donut"
         data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
         data-doi="{{ entry.doi }}" {% elsif entry.altmetric %} data-altmetric-id="{{ entry.altmetric }}" {% elsif
         entry.pmid %} data-pmid="{{ entry.pmid }}" {% elsif entry.isbn %} data-isbn="{{ entry.isbn }}" {% endif
@@ -244,8 +244,13 @@
       {%- if site.badges.dimensions_badge %}
       <span class="__dimensions_badge_embed__" {% if entry.doi %} data-doi="{{ entry.doi }}" {% else if entry.pmid %}
         data-pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
-        data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"
+        data-hide-zero-citations="true" data-style="small_circle" data-legend="hover-right"
         style="margin-bottom: 3px;"></span>
+      {%- endif %}
+      {%- if site.badges.plumx_badge %}
+      <span class="__plumx_badge_embed__" {% if entry.doi %} doi="{{ entry.doi }}" {% else if entry.pmid %}
+        pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
+        data-hide-when-empty="true" data-size="medium" style="margin-bottom: 3px;"></span>
       {%- endif %}
     </div>
     {%- endif %}
