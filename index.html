@@ -109,6 +109,9 @@
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
               <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+              <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
 
@@ -287,6 +290,92 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
+<img id="moiredetpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/moiredet.png"><div id="moiredetpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('moiredetpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="moiredetpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("moiredetpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('moiredetpng');
+      var modalImg = document.getElementById("moiredetpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="yang2023doing" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Doing More With Moiré Pattern Detection in Digital Photos</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Cong Yang, Zhenyu Yang, Yan Ke, Tao Chen, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Marcin Grzegorzek, John See' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>IEEE Transactions on Image Processing</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://ieeexplore.ieee.org/document/10006755" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://researchportal.hw.ac.uk/files/83582564/Doing_More_With_Moir_Pattern_Detection_in_Digital_Photos.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/cong-yang/MoireDet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TIP.2022.3232232"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1109/TIP.2022.3232232" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Detecting moiré patterns in digital photographs is meaningful as it provides priors towards image quality evaluation and demoiréing tasks. In this paper, we present a simple yet efficient framework to extract moiré edge maps from images with moiré patterns. The framework includes a strategy for training triplet (natural image, moiré layer, and their synthetic mixture) generation, and a Moiré Pattern Detection Neural Network (MoireDet) for moiré edge map estimation. This strategy ensures consistent pixel-level alignments during training, accommodating characteristics of a diverse set of camera-captured screen images and real-world moiré patterns from natural images. The design of three encoders in MoireDet exploits both high-level contextual and low-level structural features of various moiré patterns. Through comprehensive experiments, we demonstrate the advantages of MoireDet: better identification precision of moiré images on two datasets, and a marked improvement over state-of-the-art demoiréing methods.</p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
 <img id="recon_60_axgif" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/recon_60_ax.gif"><div id="recon_60_axgif-modal" class="modal2">
       <span class="closeimg" onclick="document.getElementById('recon_60_axgif-modal').style.display='none'">×</span>
       <div class="myCaption"></div>
@@ -365,177 +454,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <!-- Hidden abstract block -->
     <div class="abstract hidden">
       <p>Reconstructing 3D MR volumes from multiple motion-corrupted stacks of 2D slices has shown promise in imaging of moving subjects, e.g., fetal MRI. However, existing slice-to-volume reconstruction methods are time-consuming, especially when a high-resolution volume is desired. Moreover, they are still vulnerable to severe subject motion and when image artifacts are present in acquired slices. In this work, we present NeSVoR, a resolution-agnostic slice-to-volume reconstruction method, which models the underlying volume as a continuous function of spatial coordinates with implicit neural representation. To improve robustness to subject motion and other image artifacts, we adopt a continuous and comprehensive slice acquisition model that takes into account rigid inter-slice motion, point spread function, and bias fields. NeSVoR also estimates pixel-wise and slice-wise variances of image noise and enables removal of outliers during reconstruction and visualization of uncertainty. Extensive experiments are performed on both simulated and in vivo data to evaluate the proposed method. Results show that NeSVoR achieves state-of-the-art reconstruction quality while providing two to ten-fold acceleration in reconstruction times over the state-of-the-art algorithms.</p>
-    </div>
-  </div>
-</div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-<div class="row">
-  <div class="col-sm-2 preview">
-<img id="svortpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/svort.png"><div id="svortpng-modal" class="modal2">
-      <span class="closeimg" onclick="document.getElementById('svortpng-modal').style.display='none'">×</span>
-      <div class="myCaption"></div>
-      <img class="modal-content2" id="svortpng-modal-img">
-    </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById("svortpng-modal");
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('svortpng');
-      var modalImg = document.getElementById("svortpng-modal-img");
-      var captionText = modal.getElementsByTagName('div')[0];
-      img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = "";
-      }
-      // Get the <span> element that closes the modal
-      var span = modal.getElementsByTagName('span')[0];
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
-      modal.onclick = function () {
-        modal.style.display = "none";
-      }
-    </script>
-</div>
-
-  <!-- Entry bib key -->
-  <div id="10.1007/978-3-031-16446-0_1" class="col-sm-8 col-md-9">
-    <!-- Title -->
-    <div class="title">SVoRT: Iterative Transformer for Slice-to-Volume Registration in Fetal Brain MRI</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      Junshen Xu, <a href="https://dcmoyer.github.io/" rel="external nofollow noopener" target="_blank">Daniel Moyer</a>, <a href="https://scholar.google.com/citations?user=W4dqZ7EAAAAJ" rel="external nofollow noopener" target="_blank">P. Ellen Grant</a>, <a href="https://people.csail.mit.edu/polina/" rel="external nofollow noopener" target="_blank">Polina Golland</a>, and
-      <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Juan Eugenio Iglesias, Elfar Adalsteinsson' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    <div class="periodical">
-      <em>In Medical Image Computing and Computer Assisted Intervention – MICCAI 2022</em>
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      <a href="https://doi.org/10.1007/978-3-031-16446-0_1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
-      <a href="http://arxiv.org/abs/2206.10802" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-      <a href="https://github.com/daviddmc/SVoRT" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-      <a href="/assets/pdf/svort_poster.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Poster</a>
-    </div>
-    
-    <div class="badges">
-      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-isbn="978-3-031-16446-0"></span>
-      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-    </div>
-
-    <!-- Hidden abstract block -->
-    <div class="abstract hidden">
-      <p>Volumetric reconstruction of fetal brains from multiple stacks of MR slices, acquired in the presence of almost unpredictable and often severe subject motion, is a challenging task that is highly sensitive to the initialization of slice-to-volume transformations. We propose a novel slice-to-volume registration method using Transformers trained on synthetically transformed data, which model multiple stacks of MR slices as a sequence. With the attention mechanism, our model automatically detects the relevance between slices and predicts the transformation of one slice using information from other slices. We also estimate the underlying 3D volume to assist slice-to-volume registration and update the volume and transformations alternately to improve accuracy. Results on synthetic data show that our method achieves lower registration error and better reconstruction quality compared with existing state-of-the-art methods. Experiments with real-world MRI data are also performed to demonstrate the ability of the proposed model to improve the quality of 3D reconstruction under severe fetal motion.</p>
-    </div>
-  </div>
-</div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-<div class="row">
-  <div class="col-sm-2 preview">
-<img id="iqa_looppng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/iqa_loop.png"><div id="iqa_looppng-modal" class="modal2">
-      <span class="closeimg" onclick="document.getElementById('iqa_looppng-modal').style.display='none'">×</span>
-      <div class="myCaption"></div>
-      <img class="modal-content2" id="iqa_looppng-modal-img">
-    </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById("iqa_looppng-modal");
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('iqa_looppng');
-      var modalImg = document.getElementById("iqa_looppng-modal-img");
-      var captionText = modal.getElementsByTagName('div')[0];
-      img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = "";
-      }
-      // Get the <span> element that closes the modal
-      var span = modal.getElementsByTagName('span')[0];
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
-      modal.onclick = function () {
-        modal.style.display = "none";
-      }
-    </script>
-</div>
-
-  <!-- Entry bib key -->
-  <div id="https://doi.org/10.1002/mrm.29106" class="col-sm-8 col-md-9">
-    <!-- Title -->
-    <div class="title">Automated Detection and Reacquisition of Motion-Degraded Images in Fetal HASTE Imaging at 3 T</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      <a href="https://scholar.google.com/citations?user=mXUhe04AAAAJ" rel="external nofollow noopener" target="_blank">Borjan Gagoski*</a>, Junshen Xu*, Paul Wighton, M. Dylan Tisdall, and
-      <span class="more-authors" title="click to view 6 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Robert Frost, Wei-Ching Lo, Polina Golland, Andre Kouwe, Elfar Adalsteinsson, P. Ellen Grant' : '6 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">6 more authors</span>
-</div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    <div class="periodical">
-      <em>Magnetic Resonance in Medicine</em>, 2022
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29106" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
-    </div>
-    
-    <div class="badges">
-      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.29106"></span>
-      <span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.1002/mrm.29106" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-    </div>
-
-    <!-- Hidden abstract block -->
-    <div class="abstract hidden">
-      <p>Purpose: Fetal brain Magnetic Resonance Imaging suffers from unpredictable and unconstrained fetal motion that causes severe image artifacts even with half-Fourier single-shot fast spin echo (HASTE) readouts. This work presents the implementation of a closed-loop pipeline that automatically detects and reacquires HASTE images that were degraded by fetal motion without any human interaction. Methods: A convolutional neural network that performs automatic image quality assessment (IQA) was run on an external GPU-equipped computer that was connected to the internal network of the MRI scanner. The modified HASTE pulse sequence sent each image to the external computer, where the IQA convolutional neural network evaluated it, and then the IQA score was sent back to the sequence. At the end of the HASTE stack, the IQA scores from all the slices were sorted, and only slices with the lowest scores (corresponding to the slices with worst image quality) were reacquired. Results: The closed-loop HASTE acquisition framework was tested on 10 pregnant mothers, for a total of 73 acquisitions of our modified HASTE sequence. The IQA convolutional neural network, which was successfully employed by our modified sequence in real time, achieved an accuracy of 85.2% and area under the receiver operator characteristic of 0.899. Conclusion: The proposed acquisition/reconstruction pipeline was shown to successfully identify and automatically reacquire only the motion degraded fetal brain HASTE slices in the prescribed stack. This minimizes the overall time spent on HASTE acquisitions by avoiding the need to repeat the entire stack if only few slices in the stack are motion-degraded.</p>
     </div>
   </div>
 </div>
@@ -750,7 +668,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 John  See. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: January 30, 2024.
+Last updated: February 01, 2024.
       </div>
     </footer>
 

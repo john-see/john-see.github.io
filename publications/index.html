@@ -93,6 +93,9 @@
                 <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+              <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
 
@@ -136,8 +139,170 @@
 <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=uH74dcgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
 
 <div class="publications">
+  <h2 class="year">2024</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="sfamnetpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/sfamnet.png"><div id="sfamnetpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('sfamnetpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="sfamnetpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("sfamnetpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('sfamnetpng');
+      var modalImg = document.getElementById("sfamnetpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="liong2024sfamnet" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">SFAMNet: A Scene Flow Attention-based Micro-expression Network</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Gen-Bing Liong, Sze-Teng Liong, Chee Seng Chan, and <em>John See</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Neurocomputing</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://ieeexplore.ieee.org/document/10015091" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://www.techrxiv.org/articles/preprint/NeSVoR_Implicit_Neural_Representation_for_Slice-to-Volume_Reconstruction_in_MRI/21398868" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/genbing99/SFAMNet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.neucom.2023.126998"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1016/j.neucom.2023.126998" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Tremendous progress has been made in facial Micro-Expression (ME) spotting and recognition; however, most works have focused on either spotting or recognition tasks on the 2D videos. Until recently, the estimation of the 3D motion field (a.k.a scene flow) for the ME has only become possible after the release of the multi-modal ME dataset. In this paper, we propose the first Scene Flow Attention-based Micro-expression Network, namely SFAMNet. It takes the scene flow computed using the RGB-D flow algorithm as the input and predicts the spotting confidence score and emotion labels. Specifically, SFAMNet is an attention-based end-to-end multi-stream multi-task network devised to spot and recognize the ME. Besides that, we present a data augmentation strategy to alleviate the small sample size problem during network learning. Extensive experiments are performed on three tasks: (i) ME spotting; (ii) ME recognition; and (iii) ME analysis on the multi-modal CAS(ME)^3 dataset. Empirical results indicate that depth is vital in capturing the ME information and the effectiveness of the proposed approach. Our source code is publicly available at <a href="https://github.com/genbing99/SFAMNet" rel="external nofollow noopener" target="_blank">https://github.com/genbing99/SFAMNet</a>.</p>
+    </div>
+  </div>
+</div>
+</li></ol>
+
   <h2 class="year">2023</h2>
   <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="moiredetpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/moiredet.png"><div id="moiredetpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('moiredetpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="moiredetpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("moiredetpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('moiredetpng');
+      var modalImg = document.getElementById("moiredetpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="yang2023doing" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Doing More With Moiré Pattern Detection in Digital Photos</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Cong Yang, Zhenyu Yang, Yan Ke, Tao Chen, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Marcin Grzegorzek, John See' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>IEEE Transactions on Image Processing</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://ieeexplore.ieee.org/document/10006755" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://researchportal.hw.ac.uk/files/83582564/Doing_More_With_Moir_Pattern_Detection_in_Digital_Photos.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      <a href="https://github.com/cong-yang/MoireDet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/TIP.2022.3232232"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1109/TIP.2022.3232232" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Detecting moiré patterns in digital photographs is meaningful as it provides priors towards image quality evaluation and demoiréing tasks. In this paper, we present a simple yet efficient framework to extract moiré edge maps from images with moiré patterns. The framework includes a strategy for training triplet (natural image, moiré layer, and their synthetic mixture) generation, and a Moiré Pattern Detection Neural Network (MoireDet) for moiré edge map estimation. This strategy ensures consistent pixel-level alignments during training, accommodating characteristics of a diverse set of camera-captured screen images and real-world moiré patterns from natural images. The design of three encoders in MoireDet exploits both high-level contextual and low-level structural features of various moiré patterns. Through comprehensive experiments, we demonstrate the advantages of MoireDet: better identification precision of moiré images on two datasets, and a marked improvement over state-of-the-art demoiréing methods.</p>
+    </div>
+  </div>
+</div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
 <div class="row">
@@ -1111,7 +1276,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 John  See. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: January 30, 2024.
+Last updated: February 01, 2024.
       </div>
     </footer>
 
