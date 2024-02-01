@@ -248,9 +248,8 @@
         style="margin-bottom: 3px;"></span>
       {%- endif %}
       {%- if site.badges.plumx_badge %}
-      <span class="__plumx_badge_embed__" {% if entry.doi %} doi="{{ entry.doi }}" {% else if entry.pmid %}
-        pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
-        data-hide-when-empty="true" data-size="medium" style="margin-bottom: 3px;"></span>
+      <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
+        data-hide-when-empty="true" data-size="medium" data-popup="right" style="margin-bottom: 3px;"></span>
       {%- endif %}
     </div>
     {%- endif %}
