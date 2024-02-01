@@ -23,10 +23,10 @@ profile:
     linkedin: #
     orcid: # 
     address: >
-        School of Computer Science<br />
-        Office 64-114<br />
-        Torstrasse 25<br />
-        9000 St. Gallen, Switzerland
+        School of Mathematical and Computer Sciences<br />
+        Office 1, Staff Office, 1st Floor, East Wing<br />
+        No. 1, Jalan Venna P5/2,<br />
+        62200 Putrajaya, Malaysia.
 ---
 
 I’m a Associate Professor at the Heriot-Watt University, Malaysia campus from April 2021.
