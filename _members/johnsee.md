@@ -4,7 +4,7 @@ inline: false
 group: Faculty
 group_rank: 1
 
-title: Assoc. Prof. Dr. John See
+title: Dr. John See
 description: Profile of Prof. Dr. Guido Salvaneschi, Head of the Programming Group.
 lastname: See
 publications: 'author^=*See'
@@ -14,7 +14,7 @@ teaser: >
     Before that, I was a Senior Lecturer at Multimedia University, Malaysia where I led the Visual Processing Lab and Centre for Visual Computing.
 
 profile:
-    name: Assoc. Prof. Dr. John See
+    name: Dr. John See
     position: Principal Investigator
     align: right
     image: john-pic2.jpg
