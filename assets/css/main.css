@@ -776,6 +776,10 @@ footer.sticky-bottom {
   border-color: var(--global-text-color);
 }
 
+h2.member-group {
+  margin-top: 1em;
+}
+
 figure.highlight {
   margin: 0 0 1rem;
 }
