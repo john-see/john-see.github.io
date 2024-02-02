@@ -86,7 +86,3 @@ Before that, I was a Senior Lecturer at Multimedia University, Malaysia where I 
 * COP’16 workshop at ECOOP
 
 
-## Short Bio
-
-I got my PhD from Dipartimento di Elettronica e Informazione at Politecnico di Milano, under the supervision of Prof. Carlo Ghezzi. My doctoral dissertation focuses on context-oriented programming and language-level techniques for adaptive software.Visiting Ph.D. student, Fall 2011, Massachusetts Institute of Technology, Computer Science and Artificial Intelligence Laboratory, Supervisor: Prof. Barbara Liskov. Visiting Ph.D. student, Spring 2011, Technical University of Darmstadt, Computer Engineering Department, Supervisor: Prof. Mira Mezini. I’ve been an assistant professor at TU Darmstadt until fall 2020.
-
