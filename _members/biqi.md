@@ -23,6 +23,6 @@ profile:
     email: bf2006@hw.ac.uk
 ---
 
-    I am a final-year BSc Computing Science student at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on BrandDiffusion, a project that initiates a generative AI framework that creatively fuses branding concepts to create new promotional materials.
+I am a final-year BSc Computing Science student at Heriot-Watt University, Malaysia campus. 
+My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
+Currently, I am working on BrandDiffusion, a project that initiates a generative AI framework that creatively fuses branding concepts to create new promotional materials.

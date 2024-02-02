@@ -22,6 +22,6 @@ profile:
     email: genbing67@gmail.com
 ---
 
-    I am an AI Engineer at Red Dot Analytics (Singapore) and a PhD student at University of Malaya. Before this, I was a data scientist at TM Research & Development.
-    My research interests are in the areas of computer vision and deep learning. My doctoral research work on the analysis of micro-expressions from faces was co-advised by Dr. John See.
+I am an AI Engineer at Red Dot Analytics (Singapore) and a PhD student at University of Malaya. Before this, I was a data scientist at TM Research & Development.
+My research interests are in the areas of computer vision and deep learning. My doctoral research work on the analysis of micro-expressions from faces was co-advised by Dr. John See.
  

@@ -23,6 +23,6 @@ profile:
     email: zy62@hw.ac.uk
 ---
 
-    I am a final-year BSc Statistical Data Science student at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on a project that explores new difficulty scoring mechanisms for curriculum learning on data with subjective labels. 
+I am a final-year BSc Statistical Data Science student at Heriot-Watt University, Malaysia campus. 
+My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
+Currently, I am working on a project that explores new difficulty scoring mechanisms for curriculum learning on data with subjective labels. 
