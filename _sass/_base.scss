@@ -535,7 +535,7 @@ footer.sticky-bottom {
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;  
     text-align: right;
   }
 }
@@ -734,10 +734,14 @@ footer.sticky-bottom {
   }
 }
 
-// Lab
+// Post (general)
 
-h2.member-group {
-  margin-top: 1em;
+.post {
+  
+  h2 {
+    margin-top: 2rem;
+  }
+
 }
 
 // Rouge Color Customization
