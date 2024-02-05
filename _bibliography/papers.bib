@@ -119,6 +119,38 @@ video = "moiredet-demo.mp4"
   arXiv = "2310.06437"
 }
 
+@article{lim2023ernet,
+  title={ERNet: An Efficient and Reliable Human-Object Interaction Detection Network},
+  author={Lim, JunYi and Baskaran, Vishnu Monn and Lim, Joanne Mun-Yee and Wong, KokSheik and See, John and Tistarelli, Massimo},
+  journal={IEEE Transactions on Image Processing},
+  volume={32},
+  pages={964--979},
+  year={2023},
+  publisher={IEEE},
+  abbr = "TIP",
+  doi={10.1109/TIP.2022.3231528},
+  selected={true},
+  preview = "ernet.png",
+  abstract = {Human-Object Interaction (HOI) detection recognizes how persons interact with objects, which is advantageous in autonomous systems such as self-driving vehicles and collaborative robots. However, current HOI detectors are often plagued by model inefficiency and unreliability when making a prediction, which consequently limits its potential for real-world scenarios. In this paper, we address these challenges by proposing ERNet, an end-to-end trainable convolutional-transformer network for HOI detection. The proposed model employs an efficient multi-scale deformable attention to effectively capture vital HOI features. We also put forward a novel detection attention module to adaptively generate semantically rich instance and interaction tokens. These tokens undergo pre-emptive detections to produce initial region and vector proposals that also serve as queries which enhances the feature refinement process in the transformer decoders. Several impactful enhancements are also applied to improve the HOI representation learning. Additionally, we utilize a predictive uncertainty estimation framework in the instance and interaction classification heads to quantify the uncertainty behind each prediction. By doing so, we can accurately and reliably predict HOIs even under challenging scenarios. Experiment results on the HICO-Det, V-COCO, and HOI-A datasets demonstrate that the proposed model achieves state-of-the-art performance in detection accuracy and training efficiency. Codes are publicly available at <a href="https://github.com/Monash-CyPhi-AI-Research-Lab/ernet">https://github.com/Monash-CyPhi-AI-Research-Lab/ernet</a>.},
+  code = "https://github.com/Monash-CyPhi-AI-Research-Lab/ernet",
+}
+
+@inproceedings{davison2023megc2023,
+  title={MEGC2023: ACM Multimedia 2023 ME Grand Challenge},
+  author={Davison, Adrian K and Li, Jingting and Yap, Moi Hoon and See, John and Cheng, Wen-Huang and Li, Xiaobai and Hong, Xiaopeng and Wang, Su-Jing},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={9625--9629},
+  year={2023},
+  doi={10.1145/3581783.3612833},
+  abbr="MM",
+  preview = "megc2023.png",
+  publisher = "ACM",
+  abstract = {Facial micro-expressions (MEs) are involuntary movements of the face that occur spontaneously when a person experiences an emotion but attempts to suppress or repress the facial expression, typically found in a high-stakes environment. Unfortunately, the small sample problem severely limits the automation of ME analysis. Furthermore, due to the weak and transient nature of MEs, it is difficult for models to distinguish it from other types of facial actions. Therefore, ME in long videos is a challenging task, and the current performance cannot meet the practical application requirements. Addressing these issues, this challenge focuses on ME and the macro-expression (MaE) spotting task. This year, in order to evaluate algorithms' performance more fairly, based on CAS(ME)2, SAMM Long Videos, SMIC-E-long, CAS(ME)3 and 4DME, we build an unseen cross-cultural long-video test set. All participating algorithms are required to run on this test set and submit their results on a leaderboard with a baseline result.},
+  url = "https://dl.acm.org/doi/abs/10.1145/3581783.3612833",
+  website = "https://megc2023.github.io/",
+  isbn="979-8-4007-0108-5/23/10"
+}
+
 InProceedings{10.1007/978-3-031-16446-0_1,
 author="Xu, Junshen
 and Moyer, Daniel
