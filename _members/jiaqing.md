@@ -11,9 +11,9 @@ lastname: Poh
 publications: 'author^=*Poh'
 
 teaser: >
-    I am a PhD student and a Research Assistant at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on programming models for decentralized and resilient systems.
+    I am a second-year PhD student and a Research Assistant at Heriot-Watt University, Malaysia campus. 
+    My research interests include multimodal learning, neural networks and statistical data analysis.
+    Currently, I am working on multimodal learning techniques for predicting the emotional state of people in various in-the-wild naturalistic conversations such as video-conferencing scenarios and social interactions.
 
 profile:
     name: Poh Jia Qing
@@ -23,6 +23,6 @@ profile:
     email: jp181@hw.ac.uk
 ---
 
-I am a PhD student and a Research Assistant at Heriot-Watt University, Malaysia campus. 
-My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-Currently, I am working on programming models for decentralized and resilient systems.
+I am a second-year PhD student and a Research Assistant at Heriot-Watt University, Malaysia campus. 
+My research interests include multimodal learning, neural networks and statistical data analysis.
+Currently, I am working on multimodal learning techniques for predicting the emotional state of people in various in-the-wild naturalistic conversations such as video-conferencing scenarios and social interactions.

@@ -12,8 +12,8 @@ publications: 'author^=*Fong'
 
 teaser: >
     I am a final-year BSc Computing Science student at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on BrandDiffusion, a project that initiates a generative AI framework that creatively fuses branding concepts to create new promotional materials.
+    My research interests include generative art, diffusion models, and animation scripting.
+    Currently, I am working on BrandDiffusion, a project that builds a generative AI framework that creatively fuses branding components such as objects, stylisation, and typography to create new promotional materials.
 
 profile:
     name: Fong Bi Qi
@@ -24,5 +24,5 @@ profile:
 ---
 
 I am a final-year BSc Computing Science student at Heriot-Watt University, Malaysia campus. 
-My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-Currently, I am working on BrandDiffusion, a project that initiates a generative AI framework that creatively fuses branding concepts to create new promotional materials.
+My research interests include generative art, diffusion models, and animation scripting.
+Currently, I am working on BrandDiffusion, a project that builds a generative AI framework that creatively fuses branding components such as objects, stylisation, and typography to create new promotional materials.

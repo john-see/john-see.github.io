@@ -12,17 +12,17 @@ publications: 'author^=*Chek'
 
 teaser: >
     I am a final-year BSc Statistical Data Science student at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on a project on predicting social media engagement for museums on TikTok. 
+    My research interests include social media analytics and data analysis.
+    Currently, I am working on a project that aims to study and understand social media engagement for museums on the TikTok platform, and how the fusing a diverse multimedia data can produce reliable predictive models.
 
 profile:
     name: Jane Chek Zi Yan
     align: right
     image: jane.jpg
     role: Honours Project Student
-    email: bf2006@hw.ac.uk
+    email: chekjane8@gmail.com
 ---
 
 I am a final-year BSc Statistical Data Science student at Heriot-Watt University, Malaysia campus. 
-My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-Currently, I am working on a project on predicting social media engagement for museums on TikTok. 
+My research interests include social media analytics and data analysis.
+Currently, I am working on a project that aims to study and understand social media engagement for museums on the TikTok platform, and how the fusing a diverse multimedia data can produce reliable predictive models.

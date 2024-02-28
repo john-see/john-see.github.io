@@ -11,9 +11,9 @@ lastname: Lim
 publications: 'author^=*Lim'
 
 teaser: >
-    I am a PhD student and a James-Watt Scholar at Heriot-Watt University, Malaysia campus. 
-    My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-    Currently, I am working on programming models for decentralized and resilient systems.
+    I am a second-year PhD student and a James-Watt Scholar at Heriot-Watt University, Malaysia campus. 
+    My research interests include predictive modelling and statistical data science.
+    Currently, I am working on understanding how user engagement levels can be better predicted in single-party and multi-party human-robot interaction (HRI) scenarios. 
 
 profile:
     name: Lim Jia Yap
@@ -23,6 +23,6 @@ profile:
     email: jl140@hw..ac.uk
 ---
 
-I am a PhD student and a James-Watt Scholar at Heriot-Watt University, Malaysia campus. 
-My research interests include Cloud Native Applications, Digital Twin, Software Architecture, and Software Engineering.
-Currently, I am working on programming models for decentralized and resilient systems.
+I am a second-year PhD student and a James-Watt Scholar at Heriot-Watt University, Malaysia campus. 
+My research interests include predictive modelling and statistical data science.
+Currently, I am working on understanding how user engagement levels can be better predicted in single-party and multi-party human-robot interaction (HRI) scenarios. 
