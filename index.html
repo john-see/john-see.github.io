@@ -660,6 +660,79 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
   </div>
 </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="megc2023png" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/megc2023.png"><div id="megc2023png-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('megc2023png-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="megc2023png-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("megc2023png-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('megc2023png');
+      var modalImg = document.getElementById("megc2023png-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="davison2023megc2023" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">MEGC2023: ACM Multimedia 2023 ME Grand Challenge</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      Adrian K Davison, Jingting Li, Moi Hoon Yap, <em>John See</em>, Wen-Huang Cheng, Xiaobai Li, Xiaopeng Hong, and Su-Jing Wang</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proceedings of the 31st ACM International Conference on Multimedia</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612833" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://megc2023.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-badge-popover="right" data-doi="10.1145/3581783.3612833"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1145/3581783.3612833" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 2px;"></span>
+      <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi=10.1145/3581783.3612833" data-hide-when-empty="true" data-size="small" data-popup="right" style="margin-bottom: 2px;" rel="external nofollow noopener" target="_blank"></a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Facial micro-expressions (MEs) are involuntary movements of the face that occur spontaneously when a person experiences an emotion but attempts to suppress or repress the facial expression, typically found in a high-stakes environment. Unfortunately, the small sample problem severely limits the automation of ME analysis. Furthermore, due to the weak and transient nature of MEs, it is difficult for models to distinguish it from other types of facial actions. Therefore, ME in long videos is a challenging task, and the current performance cannot meet the practical application requirements. Addressing these issues, this challenge focuses on ME and the macro-expression (MaE) spotting task. This year, in order to evaluate algorithms’ performance more fairly, based on CAS(ME)2, SAMM Long Videos, SMIC-E-long, CAS(ME)3 and 4DME, we build an unseen cross-cultural long-video test set. All participating algorithms are required to run on this test set and submit their results on a leaderboard with a baseline result.</p>
+    </div>
+  </div>
+</div>
+</li>
 </ol>
           </div>
 
@@ -697,7 +770,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 John  See. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: February 05, 2024.
+Last updated: February 28, 2024.
       </div>
     </footer>
 
